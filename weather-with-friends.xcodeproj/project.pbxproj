@@ -12,6 +12,9 @@
 		4A86ADE72318064C00D21622 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A86ADE52318064C00D21622 /* Main.storyboard */; };
 		4A86ADE92318064C00D21622 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4A86ADE82318064C00D21622 /* Assets.xcassets */; };
 		4A86ADEC2318064C00D21622 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A86ADEA2318064C00D21622 /* LaunchScreen.storyboard */; };
+		4AD56D3F2318185A009CF8B8 /* item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AD56D3E2318185A009CF8B8 /* item.swift */; };
+		4AD56D4523182C02009CF8B8 /* WeatherCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AD56D4323182C02009CF8B8 /* WeatherCell.swift */; };
+		4AD56D4623182C02009CF8B8 /* WeatherCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4AD56D4423182C02009CF8B8 /* WeatherCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +25,9 @@
 		4A86ADE82318064C00D21622 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4A86ADEB2318064C00D21622 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4A86ADED2318064C00D21622 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4AD56D3E2318185A009CF8B8 /* item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = item.swift; sourceTree = "<group>"; };
+		4AD56D4323182C02009CF8B8 /* WeatherCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherCell.swift; sourceTree = "<group>"; };
+		4AD56D4423182C02009CF8B8 /* WeatherCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WeatherCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +60,7 @@
 		4A86ADE02318064C00D21622 /* weather-with-friends */ = {
 			isa = PBXGroup;
 			children = (
+				4AD56D3D23181835009CF8B8 /* Model */,
 				4A86ADE12318064C00D21622 /* AppDelegate.swift */,
 				4A9EB15A23180F7000E8B8A7 /* Controller */,
 				4A9EB15B23180F7900E8B8A7 /* View */,
@@ -75,6 +82,7 @@
 			isa = PBXGroup;
 			children = (
 				4A86ADE52318064C00D21622 /* Main.storyboard */,
+				4AD56D4223182B60009CF8B8 /* CustomCell */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -86,6 +94,23 @@
 				4A86ADEA2318064C00D21622 /* LaunchScreen.storyboard */,
 			);
 			path = "Supported Files";
+			sourceTree = "<group>";
+		};
+		4AD56D3D23181835009CF8B8 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				4AD56D3E2318185A009CF8B8 /* item.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		4AD56D4223182B60009CF8B8 /* CustomCell */ = {
+			isa = PBXGroup;
+			children = (
+				4AD56D4323182C02009CF8B8 /* WeatherCell.swift */,
+				4AD56D4423182C02009CF8B8 /* WeatherCell.xib */,
+			);
+			path = CustomCell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -146,6 +171,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4AD56D4623182C02009CF8B8 /* WeatherCell.xib in Resources */,
 				4A86ADEC2318064C00D21622 /* LaunchScreen.storyboard in Resources */,
 				4A86ADE92318064C00D21622 /* Assets.xcassets in Resources */,
 				4A86ADE72318064C00D21622 /* Main.storyboard in Resources */,
@@ -159,7 +185,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4AD56D4523182C02009CF8B8 /* WeatherCell.swift in Sources */,
 				4A86ADE42318064C00D21622 /* ViewController.swift in Sources */,
+				4AD56D3F2318185A009CF8B8 /* item.swift in Sources */,
 				4A86ADE22318064C00D21622 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
